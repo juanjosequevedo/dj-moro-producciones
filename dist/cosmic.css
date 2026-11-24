@@ -139,10 +139,10 @@ h1, h2, h3 { font-family: var(--heading); line-height: 1; }
 .hero {
   position: relative; isolation: isolate;
   min-height: 100svh; height: auto;
-  padding: 126px 6% 36px;
+  padding: 124px 6% 76px;
   overflow: clip;
   background: #0a0515;
-  display: flex; flex-direction: column; justify-content: space-between; gap: 36px;
+  display: flex; flex-direction: column; justify-content: space-between; gap: 32px;
 }
 
 .hero-art { position: absolute; inset: 0; z-index: -4; }
@@ -662,6 +662,63 @@ footer {
 footer p { font-size: 13px; color: #a797b8; }
 footer > a:last-child { font-size: 15px; font-weight: 700; color: #f3dcff; }
 
+/* FLOATING BOTTOM-LEFT MUSIC CONTROL */
+.floating-music-wrap {
+  position: fixed; left: 22px; bottom: 22px; z-index: 56;
+}
+.floating-music {
+  display: inline-flex; align-items: center; gap: 11px;
+  padding: 11px 18px; border-radius: 999px;
+  background: linear-gradient(135deg, #160c29e6, #0c1226e6);
+  border: 1px solid #ffffff2e;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  color: #f6eeff; font-size: 13px; font-weight: 700; letter-spacing: .2px;
+  box-shadow: 0 10px 30px #0009, 0 0 20px #b342ff22;
+  transition: transform .25s ease, border-color .25s ease, box-shadow .25s ease, background .25s ease;
+}
+.floating-music:hover {
+  transform: translateY(-3px);
+  border-color: #ff6ad6aa;
+  box-shadow: 0 12px 34px #000b, 0 0 26px #ff44c845;
+}
+.floating-music.is-playing {
+  border-color: #4aeaff88;
+  background: linear-gradient(135deg, #25103ce8, #0e1e36e8);
+  box-shadow: 0 10px 30px #0009, 0 0 26px #4aeaff38;
+}
+.floating-music.is-waiting {
+  border-color: #ff58ce99;
+  animation: musicPulse 2.4s ease-in-out infinite;
+}
+.music-eq {
+  display: inline-flex; align-items: flex-end; gap: 3px; height: 15px; width: 19px;
+}
+.music-eq i {
+  width: 3px; height: 4px; border-radius: 2px;
+  background: #9f92b8;
+  transition: height .25s ease, background .25s ease;
+}
+.floating-music.is-playing .music-eq i {
+  background: var(--cyan);
+  height: 15px;
+  transform-origin: bottom;
+  animation: eqBounce .75s ease-in-out infinite alternate;
+}
+.floating-music.is-playing .music-eq i:nth-child(1) { background: var(--pink); animation-duration: .62s; }
+.floating-music.is-playing .music-eq i:nth-child(2) { background: var(--cyan); animation-duration: .84s; animation-delay: -.25s; }
+.floating-music.is-playing .music-eq i:nth-child(3) { background: var(--orange); animation-duration: .58s; animation-delay: -.45s; }
+.floating-music.is-playing .music-eq i:nth-child(4) { background: var(--violet); animation-duration: .76s; animation-delay: -.15s; }
+
+@keyframes eqBounce {
+  from { transform: scaleY(.24); }
+  to { transform: scaleY(1); }
+}
+@keyframes musicPulse {
+  0%, 100% { box-shadow: 0 10px 30px #0009, 0 0 18px #ff44c830; }
+  50% { box-shadow: 0 10px 30px #0009, 0 0 30px #ff44c878; }
+}
+
 .floating-contact {
   position: fixed; right: 24px; bottom: 24px; z-index: 55;
   display: flex; gap: 10px; align-items: center;
@@ -831,7 +888,9 @@ footer > a:last-child { font-size: 15px; font-weight: 700; color: #f3dcff; }
   .contact h2 { font-size: clamp(72px, 18vw, 128px); }
   footer { flex-wrap: wrap; gap: 18px; padding-bottom: 96px; }
   footer p { order: 3; width: 100%; }
-  .floating-contact { right: 16px; bottom: 16px; padding: 12px 18px; font-size: 13px; }
+  .floating-music-wrap { left: 14px; bottom: 16px; }
+  .floating-music { padding: 10px 14px; font-size: 12.5px; gap: 8px; }
+  .floating-contact { right: 14px; bottom: 16px; padding: 11px 16px; font-size: 12.5px; }
 }
 
 @media (max-width: 400px) {

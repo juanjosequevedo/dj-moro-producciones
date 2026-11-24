@@ -12,10 +12,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,700;0,800;0,900;1,700&family=Cormorant+Garamond:ital,wght@1,600;1,700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="cosmic.css?v=4">
+  <link rel="stylesheet" href="cosmic.css?v=5">
   <link rel="stylesheet" href="eventos.css?v=4">
   <script src="cosmic.js?v=4" defer></script>
-  <script src="musica.js?v=1" defer></script>
+  <script src="musica.js?v=2" defer></script>
 </head>
 <body>
 <a class="skip-link" href="#contenido">Ir al contenido</a>
@@ -76,12 +76,6 @@
         <a class="button ghost" href="#arma-tu-show">
           Armar mi combo <span aria-hidden="true">✦</span>
         </a>
-      </div>
-
-      <div class="music-control">
-        <button class="button ghost" id="music-toggle" type="button" aria-controls="site-music" hidden>Activar música</button>
-        <span id="music-status" role="status"></span>
-        <audio id="site-music" src="assets/dj-moro-loop.mp3" preload="none" loop></audio>
       </div>
 
       <!-- Interactive Live FX Console -->
@@ -526,6 +520,15 @@
   <p>Tuluá · Buga · Guacarí · Calima–El Darién · Sonido, pista LED, 360° y efectos especiales.</p>
   <a href="tel:+573173614647">+57 317 361 4647</a>
 </footer>
+
+<div class="floating-music-wrap">
+  <button class="floating-music" id="music-toggle" type="button" aria-pressed="false" aria-label="Activar música de fondo">
+    <span class="music-eq" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+    <span class="music-label">Activar música</span>
+  </button>
+  <span id="music-status" class="sr-only" role="status"></span>
+  <audio id="site-music" src="assets/dj-moro-loop.mp3" preload="auto"></audio>
+</div>
 
 <a class="floating-contact" href="https://wa.me/573173614647?text=Hola%20DJ%20Moro%2C%20quiero%20consultar%20disponibilidad%20para%20un%20evento." target="_blank" rel="noopener" aria-label="Contactar a DJ Moro por WhatsApp">
   <span class="floating-ping" aria-hidden="true"></span>
