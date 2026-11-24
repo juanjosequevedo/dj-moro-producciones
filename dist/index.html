@@ -13,7 +13,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="cosmic.css?v=3">
-  <link rel="stylesheet" href="eventos.css?v=1">
+  <link rel="stylesheet" href="eventos.css?v=2">
   <script src="cosmic.js?v=3" defer></script>
 </head>
 <body>
@@ -43,30 +43,52 @@
   </section>
   <section class="event-showcase" id="eventos" aria-labelledby="event-title">
     <div class="event-wrap">
-      <header class="event-intro"><p>Eventos en Tuluá y alrededores</p><h2 id="event-title">¿Qué vas a celebrar?</h2></header>
+      <header class="event-intro">
+        <h2 id="event-title">¿Qué vas a celebrar?</h2>
+        <nav class="event-nav" aria-label="Tipos de eventos">
+          <a href="#baby-shower">Baby showers</a><a href="#matrimonios">Matrimonios</a>
+          <a href="#quince">15 años</a><a href="#cumpleanos">Cumpleaños</a><a href="#empresariales">Empresariales</a>
+        </nav>
+      </header>
       <div class="event-grid">
-        <article class="event-card event-wedding">
-          <h3>Matrimonios</h3>
-          <p>Desde la música de la entrada hasta la última canción. Dale a cada momento su propio ambiente.</p>
-          <ul><li>Sonido para ceremonia y brindis</li><li>Iluminación ambiental</li><li>DJ y pista LED para la recepción</li></ul>
-          <a href="https://wa.me/573173614647?text=Hola%20DJ%20Moro%2C%20quiero%20cotizar%20mi%20matrimonio." target="_blank" rel="noopener">Cotizar matrimonio</a>
-        </article>
-        <article class="event-card event-baby">
-          <h3>Baby showers</h3>
-          <p>Un ambiente cálido para recibir a la familia y celebrar la llegada del bebé.</p>
-          <ul><li>Música ambiental para compartir</li><li>Sonido para juegos y anuncios</li><li>Plataforma 360° opcional</li></ul>
-          <a href="https://wa.me/573173614647?text=Hola%20DJ%20Moro%2C%20quiero%20cotizar%20un%20baby%20shower." target="_blank" rel="noopener">Cotizar baby shower</a>
-        </article>
-        <article class="event-card event-party">
-          <h3>Cumpleaños y 15 años</h3>
+        <section class="event-card event-baby" id="baby-shower" aria-labelledby="baby-title">
+          <div class="event-heading"><h3 id="baby-title"><span>Baby</span><br><em>shower</em></h3></div>
+          <div class="event-copy">
+            <p>Un ambiente cálido para reunir a la familia y celebrar la llegada del bebé.</p>
+            <ul><li>Música ambiental</li><li>Sonido para juegos y anuncios</li><li>Plataforma 360° opcional</li></ul>
+            <a href="https://wa.me/573173614647?text=Hola%20DJ%20Moro%2C%20quiero%20cotizar%20un%20baby%20shower." target="_blank" rel="noopener">Cotizar baby shower</a>
+          </div>
+        </section>
+        <section class="event-card event-wedding" id="matrimonios" aria-labelledby="wedding-title">
+          <div class="event-heading"><h3 id="wedding-title">Matrimonios</h3></div>
+          <div class="event-copy">
+            <p>La música de la entrada, las voces del brindis y el primer baile. Preparamos el sonido y las luces para cada momento.</p>
+            <ul><li>Sonido para ceremonia y brindis</li><li>Iluminación ambiental</li><li>DJ y pista LED para la recepción</li></ul>
+            <a href="https://wa.me/573173614647?text=Hola%20DJ%20Moro%2C%20quiero%20cotizar%20mi%20matrimonio." target="_blank" rel="noopener">Cotizar matrimonio</a>
+          </div>
+        </section>
+        <section class="event-card event-quince" id="quince" aria-labelledby="quince-title">
+          <div class="event-heading"><h3 id="quince-title"><strong>15</strong> años</h3></div>
+          <div class="event-copy">
+            <p>Prepara la entrada, el vals y la fiesta con DJ, pista LED y efectos para los momentos que quieres recordar.</p>
+            <a href="https://wa.me/573173614647?text=Hola%20DJ%20Moro%2C%20quiero%20cotizar%20una%20fiesta%20de%2015%20a%C3%B1os." target="_blank" rel="noopener">Cotizar mis 15</a>
+          </div>
+          <!-- Agregar clips reales con <video controls preload="metadata" playsinline>. -->
+          <div class="event-video-gallery" aria-label="Videos de nuestros 15">
+            <h4>Videos de nuestros 15</h4>
+            <p>Próximamente compartiremos aquí videos de nuestros eventos.</p>
+          </div>
+        </section>
+        <section class="event-card event-party" id="cumpleanos" aria-labelledby="party-title">
+          <h3 id="party-title">Cumpleaños</h3>
           <p>Música para llenar la pista y luces para destacar la entrada, el baile o el momento de la torta.</p>
           <a href="https://wa.me/573173614647?text=Hola%20DJ%20Moro%2C%20quiero%20cotizar%20una%20fiesta%20privada." target="_blank" rel="noopener">Cotizar celebración</a>
-        </article>
-        <article class="event-card event-business">
-          <h3>Eventos empresariales</h3>
+        </section>
+        <section class="event-card event-business" id="empresariales" aria-labelledby="business-title">
+          <h3 id="business-title">Eventos empresariales</h3>
           <p>Sonido para intervenciones, iluminación y música para reuniones, lanzamientos y celebraciones de empresa.</p>
           <a href="https://wa.me/573173614647?text=Hola%20DJ%20Moro%2C%20quiero%20cotizar%20un%20evento%20empresarial." target="_blank" rel="noopener">Cotizar evento empresarial</a>
-        </article>
+        </section>
       </div>
     </div>
   </section>
