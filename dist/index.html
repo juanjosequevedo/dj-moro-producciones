@@ -4,158 +4,555 @@
   <meta charset="UTF-8">
   <meta name="google-site-verification" content="cEsbfgVUr5ldTwiGHlzcAlqcKGcjPk9GdLw13tfAQcg">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#080611">
-  <meta name="description" content="DJ Moro Producciones en Tuluá: alquiler de sonido, DJ, luces, pista LED, plataforma 360 y efectos especiales. Cobertura en Buga, Guacarí y Calima–El Darién.">
-  <title>DJ Moro Producciones en Tuluá | Sonido, DJ y eventos</title>
-  <link rel="canonical" href="https://juanjosequevedo.github.io/dj-moro-producciones/">
+  <meta name="theme-color" content="#070510">
+  <meta name="description" content="DJ Moro Producciones en Tuluá: alquiler de sonido profesional, DJ en vivo, luces robóticas, pista LED Infinity 4x4, plataforma 360°, pólvora fría y confeti CO2. Cobertura en Buga, Guacarí y Calima–El Darién.">
+  <title>DJ Moro Producciones | Sonido, Pista LED, 360° y Efectos en Tuluá</title>
+  <link rel="canonical" href="https://djmoroproducciones.com/">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230a0910'/%3E%3Cpath d='M7 23V9h4l5 8 5-8h4v14h-4v-8l-5 8-5-8v8z' fill='%23fb39c4'/%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="cosmic.css?v=3">
-  <link rel="stylesheet" href="eventos.css?v=2">
-  <script src="cosmic.js?v=3" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,700;0,800;0,900;1,700&family=Cormorant+Garamond:ital,wght@1,600;1,700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="cosmic.css?v=4">
+  <link rel="stylesheet" href="eventos.css?v=4">
+  <script src="cosmic.js?v=4" defer></script>
 </head>
 <body>
 <a class="skip-link" href="#contenido">Ir al contenido</a>
 <div class="scroll-progress" aria-hidden="true"></div>
 <canvas id="atmosphere" aria-hidden="true"></canvas>
-<header class="site-header">
-  <a class="brand" href="#inicio" aria-label="DJ Moro Producciones, inicio"><span class="brand-name">DJ MORO<span class="brand-star" aria-hidden="true">✳</span></span><span class="brand-sub">P R O D U C C I O N E S</span></a>
-  <nav aria-label="Navegación principal"><a href="#eventos">Eventos</a><a href="#servicios">Servicios</a><a class="nav-contact" href="#contacto">Cotizar</a></nav>
-  <button class="motion-toggle" type="button" aria-pressed="false" aria-label="Pausar animaciones"><span class="motion-icon" aria-hidden="true">Ⅱ</span><span class="motion-label">Pausar efectos</span></button>
+
+<header class="site-header" id="top-header">
+  <a class="brand" href="#inicio" aria-label="DJ Moro Producciones, inicio">
+    <span class="brand-name">DJ MORO<span class="brand-star" aria-hidden="true">✳</span></span>
+    <span class="brand-sub">P R O D U C C I O N E S</span>
+  </a>
+  <nav aria-label="Navegación principal">
+    <a href="#eventos">Celebraciones</a>
+    <a href="#servicios">Equipos y Show</a>
+    <a href="#arma-tu-show">Arma tu Combo</a>
+    <a class="nav-contact" href="#contacto">Cotizar <span aria-hidden="true">↗</span></a>
+  </nav>
+  <button class="motion-toggle" type="button" aria-pressed="false" aria-label="Pausar animaciones">
+    <span class="motion-icon" aria-hidden="true">Ⅱ</span>
+    <span class="motion-label">Pausar efectos</span>
+  </button>
 </header>
+
 <main id="contenido">
+  <!-- HERO STAGE -->
   <section class="hero" id="inicio" aria-labelledby="hero-title">
-    <div class="hero-art" aria-hidden="true"><img src="assets/cosmic-stage.png" alt="" fetchpriority="high" width="1792" height="1024"></div>
-    <div class="aurora" aria-hidden="true"></div>
-    <div class="laser laser-one" aria-hidden="true"></div><div class="laser laser-two" aria-hidden="true"></div><div class="laser laser-three" aria-hidden="true"></div>
-    <div class="hero-copy">
-      <p class="eyebrow"><span class="mini-wave" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span> SONIDO. LUCES. EMOCIÓN.</p>
-      <h1 id="hero-title">CADA EVENTO<br>TIENE SU <em>ESTILO.</em></h1>
-      <p class="hero-description">DJ, sonido e iluminación en Tuluá para matrimonios, baby showers, fiestas y eventos empresariales.</p>
-      <div class="hero-actions"><a class="button primary" href="https://wa.me/573173614647?text=Hola%20DJ%20Moro%2C%20quiero%20cotizar%20mi%20evento.%20La%20fecha%20es%3A%20%20y%20el%20lugar%3A%20" target="_blank" rel="noopener">Hagamos tu evento <span aria-hidden="true">↗</span></a><button class="show-trigger" type="button"><span class="play-icon" aria-hidden="true">▷</span><span>Encender el show</span></button></div>
-      <p class="hero-service-line">DJ & sonido <span>✦</span> Pista LED <span>✦</span> 360° <span>✦</span> Efectos</p>
+    <div class="hero-art" aria-hidden="true">
+      <img src="assets/cosmic-stage.png" alt="" fetchpriority="high" width="1792" height="1024">
     </div>
-    <div class="frequency" aria-hidden="true"><canvas id="spectrum"></canvas><div class="frequency-center"><span>DJ MORO</span><small>FEEL THE ENERGY</small></div></div>
-    <div class="hero-foot"><a href="#eventos">Encuentra tu tipo de evento</a></div>
+    <div class="aurora" aria-hidden="true"></div>
+    <div class="stage-grid-floor" aria-hidden="true"></div>
+    <div class="laser laser-one" aria-hidden="true"></div>
+    <div class="laser laser-two" aria-hidden="true"></div>
+    <div class="laser laser-three" aria-hidden="true"></div>
+    <div class="laser laser-four" aria-hidden="true"></div>
+
+    <div class="hero-copy">
+      <div class="hero-badge-row hero-enter" style="--d:0s">
+        <p class="eyebrow">
+          <span class="mini-wave" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
+          SONIDO · LUCES · EFECTOS EN VIVO
+        </p>
+        <span class="location-pill"><span class="live-dot" aria-hidden="true"></span> Tuluá y Valle del Cauca</span>
+      </div>
+
+      <h1 id="hero-title" class="hero-enter" style="--d:.1s">
+        HAZ QUE TU FIESTA<br>SEA <em>INOLVIDABLE.</em>
+      </h1>
+
+      <p class="hero-description hero-enter" style="--d:.2s">
+        Transformamos matrimonios, 15 años, baby showers, cumpleaños y eventos empresariales en un <strong>espectáculo de otro nivel</strong> con DJ en vivo, pista LED Infinity, plataforma 360° y efectos especiales.
+      </p>
+
+      <div class="hero-actions hero-enter" style="--d:.3s">
+        <a class="button primary pulse-glow" href="https://wa.me/573173614647?text=Hola%20DJ%20Moro%2C%20quiero%20cotizar%20mi%20evento.%20La%20fecha%20es%3A%20%20y%20el%20lugar%3A%20" target="_blank" rel="noopener">
+          Cotizar mi fecha ahora <span aria-hidden="true">↗</span>
+        </a>
+        <a class="button ghost" href="#arma-tu-show">
+          Armar mi combo <span aria-hidden="true">✦</span>
+        </a>
+      </div>
+
+      <!-- Interactive Live FX Console -->
+      <div class="fx-console hero-enter" style="--d:.42s" role="group" aria-label="Consola interactiva de efectos en vivo">
+        <span class="fx-console-label">PRUEBA EL SHOW EN VIVO:</span>
+        <div class="fx-buttons">
+          <button class="fx-btn show-trigger" type="button" data-fx="full">
+            <span class="fx-dot pink" aria-hidden="true"></span> Encender Todo
+          </button>
+          <button class="fx-btn" type="button" data-fx="sparks">
+            <span class="fx-dot gold" aria-hidden="true"></span> Pólvora Fría
+          </button>
+          <button class="fx-btn" type="button" data-fx="confetti">
+            <span class="fx-dot cyan" aria-hidden="true"></span> Cañón Confeti
+          </button>
+          <button class="fx-btn" type="button" data-fx="lasers">
+            <span class="fx-dot violet" aria-hidden="true"></span> Modo Club LED
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="frequency" aria-hidden="true">
+      <div class="vinyl-halo"></div>
+      <canvas id="spectrum"></canvas>
+      <div class="frequency-center">
+        <span>DJ MORO</span>
+        <small>LIVE EXPERIENCE</small>
+      </div>
+    </div>
+
+    <div class="hero-foot">
+      <span>TULUÁ · BUGA · GUACARÍ · LAGO CALIMA</span>
+      <a href="#eventos">DESCUBRE TU CELEBRACIÓN <span aria-hidden="true">↓</span></a>
+    </div>
     <span class="show-status sr-only" role="status"></span>
   </section>
+
+  <!-- KINETIC MARQUEE -->
+  <div class="marquee" aria-hidden="true">
+    <div>
+      <span>SONIDO PROFESIONAL &amp; DJ</span><b>✳</b>
+      <span class="outline">PISTA LED INFINITY 4×4</span><b>✳</b>
+      <span>PLATAFORMA 360°</span><b>✳</b>
+      <span class="outline">PÓLVORA FRÍA SEGURA</span><b>✳</b>
+      <span>CAÑÓN DE CONFETI CO₂</span><b>✳</b>
+      <span class="outline">PROYECTOR DE VIDEO</span><b>✳</b>
+      <span>SONIDO PROFESIONAL &amp; DJ</span><b>✳</b>
+      <span class="outline">PISTA LED INFINITY 4×4</span><b>✳</b>
+      <span>PLATAFORMA 360°</span><b>✳</b>
+      <span class="outline">PÓLVORA FRÍA SEGURA</span><b>✳</b>
+      <span>CAÑÓN DE CONFETI CO₂</span><b>✳</b>
+      <span class="outline">PROYECTOR DE VIDEO</span><b>✳</b>
+    </div>
+  </div>
+
+  <!-- IMPACT STATS BAR -->
+  <section class="impact-strip" aria-label="Destacados de DJ Moro Producciones">
+    <div class="impact-item reveal">
+      <strong class="impact-num" data-count="16" data-suffix=" MÓDULOS">16 MÓDULOS</strong>
+      <span>Pista LED 4×4 con profundidad infinita</span>
+    </div>
+    <div class="impact-item reveal">
+      <strong class="impact-num" data-count="360" data-suffix="° SLOW-MO">360° SLOW-MO</strong>
+      <span>Videos al instante listos para tus redes</span>
+    </div>
+    <div class="impact-item reveal">
+      <strong class="impact-num" data-count="100" data-suffix="% SEGURO">100% SEGURO</strong>
+      <span>Chispas frías para interiores y exteriores</span>
+    </div>
+    <div class="impact-item reveal">
+      <strong class="impact-num">TODO PÚBLICO</strong>
+      <span>Crossover, urbano, clásicos y gala a medida</span>
+    </div>
+  </section>
+
+  <!-- CELEBRATION WORLDS -->
   <section class="event-showcase" id="eventos" aria-labelledby="event-title">
     <div class="event-wrap">
-      <header class="event-intro">
-        <h2 id="event-title">¿Qué vas a celebrar?</h2>
-        <nav class="event-nav" aria-label="Tipos de eventos">
-          <a href="#baby-shower">Baby showers</a><a href="#matrimonios">Matrimonios</a>
-          <a href="#quince">15 años</a><a href="#cumpleanos">Cumpleaños</a><a href="#empresariales">Empresariales</a>
+      <header class="event-intro reveal">
+        <p class="eyebrow">01 / CADA HISTORIA MERECE SU PROPIA ATMÓSFERA</p>
+        <h2 id="event-title">¿Qué vas a <em>celebrar?</em></h2>
+        <p class="event-lead">Desde la ternura de una bienvenida familiar hasta una pista encendida hasta el amanecer. Adaptamos la música, la iluminación y los efectos al estilo exacto de tus invitados.</p>
+
+        <nav class="event-nav" aria-label="Filtrar tipos de eventos">
+          <button type="button" class="event-chip is-active" data-filter="all">Todos los eventos</button>
+          <button type="button" class="event-chip" data-filter="matrimonios">💍 Matrimonios</button>
+          <button type="button" class="event-chip" data-filter="quince">👑 15 Años</button>
+          <button type="button" class="event-chip" data-filter="baby-shower">🧸 Baby Shower y Revelación</button>
+          <button type="button" class="event-chip" data-filter="cumpleanos">🎉 Cumpleaños y Grados</button>
+          <button type="button" class="event-chip" data-filter="empresariales">💼 Empresariales</button>
         </nav>
       </header>
+
       <div class="event-grid">
-        <section class="event-card event-baby" id="baby-shower" aria-labelledby="baby-title">
-          <div class="event-heading"><h3 id="baby-title"><span>Baby</span><br><em>shower</em></h3></div>
+        <!-- MATRIMONIOS -->
+        <section class="event-card event-wedding reveal" id="matrimonios" data-category="matrimonios" aria-labelledby="wedding-title">
+          <div class="card-ambient wedding-ambient" aria-hidden="true">
+            <span class="orb orb-1"></span><span class="orb orb-2"></span><span class="orb orb-3"></span>
+          </div>
+          <div class="event-heading">
+            <span class="event-tag">ELEGANCIA · ROMANCE · FIESTA</span>
+            <h3 id="wedding-title">Matri<span>monios</span></h3>
+            <p class="event-quote">“Del ‘sí, acepto’ al último baile con toda tu gente en la pista.”</p>
+          </div>
           <div class="event-copy">
-            <p>Un ambiente cálido para reunir a la familia y celebrar la llegada del bebé.</p>
-            <ul><li>Música ambiental</li><li>Sonido para juegos y anuncios</li><li>Plataforma 360° opcional</li></ul>
-            <a href="https://wa.me/573173614647?text=Hola%20DJ%20Moro%2C%20quiero%20cotizar%20un%20baby%20shower." target="_blank" rel="noopener">Cotizar baby shower</a>
+            <p>Cuidamos cada transición: sonido cristalino para la ceremonia y el brindis, iluminación cálida en la cena, tu primer baile enmarcado en chispas frías y una fiesta inolvidable.</p>
+            <ul class="event-highlights">
+              <li>Sonido nítido para votos, micrófonos inalámbricos y brindis</li>
+              <li>Primer baile mágico sobre Pista LED + 2 quemadores de pólvora fría</li>
+              <li>DJ crossover en vivo y Plataforma 360° para los invitados</li>
+            </ul>
+            <div class="event-card-actions">
+              <a class="event-cta" href="https://wa.me/573173614647?text=Hola%20DJ%20Moro%2C%20quiero%20cotizar%20mi%20matrimonio." target="_blank" rel="noopener">Cotizar matrimonio <span aria-hidden="true">↗</span></a>
+              <button type="button" class="preset-trigger" data-preset="wedding">Cargar combo boda ↓</button>
+            </div>
           </div>
         </section>
-        <section class="event-card event-wedding" id="matrimonios" aria-labelledby="wedding-title">
-          <div class="event-heading"><h3 id="wedding-title">Matrimonios</h3></div>
+
+        <!-- 15 AÑOS -->
+        <section class="event-card event-quince reveal" id="quince" data-category="quince" aria-labelledby="quince-title">
+          <div class="card-ambient quince-ambient" aria-hidden="true">
+            <span class="prism-beam"></span><span class="sparkle s1">✦</span><span class="sparkle s2">✧</span><span class="sparkle s3">✦</span>
+          </div>
+          <div class="event-heading">
+            <span class="event-tag">BRILLO · PASARELA · HORA LOCA</span>
+            <h3 id="quince-title"><strong>15</strong> <em>años</em></h3>
+            <p class="event-quote">“Una entrada de reina, un vals de película y la noche más épica.”</p>
+          </div>
           <div class="event-copy">
-            <p>La música de la entrada, las voces del brindis y el primer baile. Preparamos el sonido y las luces para cada momento.</p>
-            <ul><li>Sonido para ceremonia y brindis</li><li>Iluminación ambiental</li><li>DJ y pista LED para la recepción</li></ul>
-            <a href="https://wa.me/573173614647?text=Hola%20DJ%20Moro%2C%20quiero%20cotizar%20mi%20matrimonio." target="_blank" rel="noopener">Cotizar matrimonio</a>
+            <p>Diseñamos la producción completa para que cada momento clave brille en fotos, reels y en la memoria de todos tus amigos y familia.</p>
+            <ul class="event-highlights">
+              <li>Pasarela e ingreso triunfal con espectáculo de pólvora fría</li>
+              <li>Pista de baile LED Infinity 4×4 para el vals y el baile sorpresa</li>
+              <li>Plataforma 360° + explosión de confeti CO₂ en la hora loca</li>
+            </ul>
+            <div class="event-card-actions">
+              <a class="event-cta" href="https://wa.me/573173614647?text=Hola%20DJ%20Moro%2C%20quiero%20cotizar%20una%20fiesta%20de%2015%20a%C3%B1os." target="_blank" rel="noopener">Cotizar mis 15 <span aria-hidden="true">↗</span></a>
+              <button type="button" class="preset-trigger" data-preset="quince">Cargar combo 15 años ↓</button>
+            </div>
+          </div>
+
+          <div class="quince-moments" aria-label="Momentos clave de unos 15 años con DJ Moro">
+            <div class="moment-pill"><span>01</span><strong>La Gran Entrada</strong><small>Luces robóticas + chispas doradas</small></div>
+            <div class="moment-pill"><span>02</span><strong>El Vals &amp; Brindis</strong><small>Pista Infinity + sonido emotivo</small></div>
+            <div class="moment-pill"><span>03</span><strong>Sesión 360°</strong><small>Reels virales con tus invitados</small></div>
+            <div class="moment-pill"><span>04</span><strong>Show &amp; Hora Loca</strong><small>DJ en vivo + disparo de confeti CO₂</small></div>
           </div>
         </section>
-        <section class="event-card event-quince" id="quince" aria-labelledby="quince-title">
-          <div class="event-heading"><h3 id="quince-title"><strong>15</strong> años</h3></div>
+
+        <!-- BABY SHOWER & GENDER REVEAL -->
+        <section class="event-card event-baby reveal" id="baby-shower" data-category="baby-shower" aria-labelledby="baby-title">
+          <div class="card-ambient baby-ambient" aria-hidden="true">
+            <span class="bubble b1"></span><span class="bubble b2"></span><span class="bubble b3"></span>
+          </div>
+          <div class="event-heading">
+            <span class="event-tag">TERNURA · FAMILIA · REVELACIÓN</span>
+            <h3 id="baby-title"><span>Baby shower</span><br><em>&amp; Revelación</em></h3>
+            <p class="event-quote">“Celebra la dulce espera con emoción, juegos y el gran anuncio.”</p>
+          </div>
           <div class="event-copy">
-            <p>Prepara la entrada, el vals y la fiesta con DJ, pista LED y efectos para los momentos que quieres recordar.</p>
-            <a href="https://wa.me/573173614647?text=Hola%20DJ%20Moro%2C%20quiero%20cotizar%20una%20fiesta%20de%2015%20a%C3%B1os." target="_blank" rel="noopener">Cotizar mis 15</a>
-          </div>
-          <!-- Agregar clips reales con <video controls preload="metadata" playsinline>. -->
-          <div class="event-video-gallery" aria-label="Videos de nuestros 15">
-            <h4>Videos de nuestros 15</h4>
-            <p>Próximamente compartiremos aquí videos de nuestros eventos.</p>
+            <p>Creamos un ambiente acogedor y alegre para compartir en familia, conducir dinámicas divertidas y hacer que el momento de revelar el bebé sea inolvidable.</p>
+            <ul class="event-highlights">
+              <li>Música ambiental cálida y sonido claro para juegos y animación</li>
+              <li>Show de luces y cañón de confeti rosa o azul para Revelación</li>
+              <li>Plataforma 360° y proyector opcional para recuerdos en familia</li>
+            </ul>
+            <div class="event-card-actions">
+              <a class="event-cta" href="https://wa.me/573173614647?text=Hola%20DJ%20Moro%2C%20quiero%20cotizar%20un%20Baby%20Shower%20o%20Revelaci%C3%B3n." target="_blank" rel="noopener">Cotizar baby shower <span aria-hidden="true">↗</span></a>
+              <button type="button" class="preset-trigger" data-preset="baby">Cargar combo baby ↓</button>
+            </div>
           </div>
         </section>
-        <section class="event-card event-party" id="cumpleanos" aria-labelledby="party-title">
-          <h3 id="party-title">Cumpleaños</h3>
-          <p>Música para llenar la pista y luces para destacar la entrada, el baile o el momento de la torta.</p>
-          <a href="https://wa.me/573173614647?text=Hola%20DJ%20Moro%2C%20quiero%20cotizar%20una%20fiesta%20privada." target="_blank" rel="noopener">Cotizar celebración</a>
+
+        <!-- CUMPLEAÑOS Y FIESTAS PRIVADAS -->
+        <section class="event-card event-party reveal" id="cumpleanos" data-category="cumpleanos" aria-labelledby="party-title">
+          <div class="card-ambient party-ambient" aria-hidden="true">
+            <div class="eq-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+          </div>
+          <div class="event-heading">
+            <span class="event-tag">ENERGÍA TOTAL · GRADOS · RUMBA</span>
+            <h3 id="party-title">Cumpleaños <em>&amp; Fiestas</em></h3>
+          </div>
+          <div class="event-copy">
+            <p>Cumpleaños 18, 30, 50, grados o rumbas en finca: convertimos cualquier salón, terraza o casa campestre en una discoteca privada con mezcla en vivo para todas las generaciones.</p>
+            <ul class="event-highlights">
+              <li>Mezcla crossover en vivo: salsa, merengue, reggaetón, electrónica y clásicos</li>
+              <li>Luces rítmicas, cámara de humo/efectos, pista LED y cañón de confeti</li>
+            </ul>
+            <div class="event-card-actions">
+              <a class="event-cta" href="https://wa.me/573173614647?text=Hola%20DJ%20Moro%2C%20quiero%20cotizar%20un%20cumplea%C3%B1os%20o%20fiesta%20privada." target="_blank" rel="noopener">Cotizar celebración <span aria-hidden="true">↗</span></a>
+              <button type="button" class="preset-trigger" data-preset="party">Cargar combo fiesta ↓</button>
+            </div>
+          </div>
         </section>
-        <section class="event-card event-business" id="empresariales" aria-labelledby="business-title">
-          <h3 id="business-title">Eventos empresariales</h3>
-          <p>Sonido para intervenciones, iluminación y música para reuniones, lanzamientos y celebraciones de empresa.</p>
-          <a href="https://wa.me/573173614647?text=Hola%20DJ%20Moro%2C%20quiero%20cotizar%20un%20evento%20empresarial." target="_blank" rel="noopener">Cotizar evento empresarial</a>
+
+        <!-- EVENTOS EMPRESARIALES -->
+        <section class="event-card event-business reveal" id="empresariales" data-category="empresariales" aria-labelledby="business-title">
+          <div class="card-ambient business-ambient" aria-hidden="true"></div>
+          <div class="event-heading">
+            <span class="event-tag">IMPACTO DE MARCA · FIN DE AÑO</span>
+            <h3 id="business-title">Eventos <em>Empresariales</em></h3>
+          </div>
+          <div class="event-copy">
+            <p>Puntualidad, presentación impecable y respaldo técnico para lanzamientos, conferencias, integraciones, aniversarios de marca y fiestas corporativas de fin de año.</p>
+            <ul class="event-highlights">
+              <li>Audio profesional para discursos, premiaciones y proyector de video</li>
+              <li>Iluminación escénica corporativa, Plataforma 360° y cierre musical con DJ</li>
+            </ul>
+            <div class="event-card-actions">
+              <a class="event-cta" href="https://wa.me/573173614647?text=Hola%20DJ%20Moro%2C%20quiero%20cotizar%20un%20evento%20empresarial." target="_blank" rel="noopener">Cotizar corporativo <span aria-hidden="true">↗</span></a>
+              <button type="button" class="preset-trigger" data-preset="business">Cargar combo empresa ↓</button>
+            </div>
+          </div>
         </section>
       </div>
     </div>
   </section>
+
+  <!-- SERVICES / EQUIPMENT SHOWCASE -->
   <section class="services section" id="servicios">
-    <div class="section-heading reveal"><div><p class="eyebrow">01 / DISEÑA TU NOCHE</p><h2>No es solo una fiesta.<br><em>Es todo un show.</em></h2></div><p>DJ Moro Producciones en Tuluá.<br>Alquiler de sonido, DJ, iluminación y efectos especiales para tu evento.</p></div>
+    <div class="section-heading reveal">
+      <div>
+        <p class="eyebrow">02 / EQUIPOS DE ALTO IMPACTO</p>
+        <h2>No es solo una fiesta.<br><em>Es todo un show.</em></h2>
+      </div>
+      <p>Haz clic en cada servicio para ver el póster en detalle o combínalos a tu gusto para crear una producción única en Tuluá y el centro del Valle.</p>
+    </div>
+
     <div class="service-grid">
       <article class="service reveal pink">
-        <button class="service-image" type="button" data-poster="assets/sonido.png" data-title="Sonido + luces + DJ" aria-label="Ampliar imagen de Sonido + luces + DJ">
+        <button class="service-image" type="button" data-poster="assets/sonido.png" data-title="Sonido + luces + DJ" aria-label="Ampliar póster de Sonido + luces + DJ">
           <img src="assets/sonido.png" alt="Sonido + luces + DJ de DJ Moro Producciones" loading="lazy" width="1024" height="1536">
-          <span class="image-tag">SONIDO QUE SE SIENTE</span><span class="expand" aria-hidden="true">↗</span>
+          <span class="image-tag">CABINA DJ + LUCES + PROYECTOR</span>
+          <span class="expand" aria-hidden="true">↗</span>
         </button>
-        <div class="service-content"><div class="service-heading"><span class="service-num">01</span><h3>Sonido + luces + DJ</h3></div>
-        <h4>El corazón de la fiesta.</h4><p>La música que conecta a todos, con el sonido y la iluminación que tu celebración merece.</p>
-        <a class="service-link" href="https://wa.me/573173614647?text=Hola%20DJ%20Moro%2C%20quiero%20consultar%20disponibilidad%20y%20cotizaci%C3%B3n%20para%20Sonido%20%2B%20luces%20%2B%20DJ." target="_blank" rel="noopener">Cotizar este servicio <span aria-hidden="true">↗</span></a></div>
+        <div class="service-content">
+          <div class="service-heading"><span class="service-num">01</span><h3>Sonido + luces + DJ</h3></div>
+          <h4>El corazón de la celebración.</h4>
+          <p>Potencia y nitidez profesional, estructura truss de luces y mezcla en vivo adaptada a tus gustos. Incluye opción de proyector de video.</p>
+          <a class="service-link" href="https://wa.me/573173614647?text=Hola%20DJ%20Moro%2C%20quiero%20consultar%20disponibilidad%20y%20cotizaci%C3%B3n%20para%20Sonido%20%2B%20luces%20%2B%20DJ." target="_blank" rel="noopener">Cotizar este servicio <span aria-hidden="true">↗</span></a>
+        </div>
       </article>
+
       <article class="service reveal cyan">
-        <button class="service-image" type="button" data-poster="assets/pista.png" data-title="Pista de baile LED" aria-label="Ampliar imagen de Pista de baile LED">
+        <button class="service-image" type="button" data-poster="assets/pista.png" data-title="Pista de baile LED Infinity" aria-label="Ampliar póster de Pista de baile LED">
           <img src="assets/pista.png" alt="Pista de baile LED de DJ Moro Producciones" loading="lazy" width="1024" height="1536">
-          <span class="image-tag">16 MÓDULOS · 4 × 4</span><span class="expand" aria-hidden="true">↗</span>
+          <span class="image-tag">16 MÓDULOS · 4 × 4 INFINITY</span>
+          <span class="expand" aria-hidden="true">↗</span>
         </button>
-        <div class="service-content"><div class="service-heading"><span class="service-num">02</span><h3>Pista de baile LED</h3></div>
-        <h4>La noche se mueve contigo.</h4><p>16 módulos con efecto infinito. Un escenario de color para el primer baile… y para el último.</p>
-        <a class="service-link" href="https://wa.me/573173614647?text=Hola%20DJ%20Moro%2C%20quiero%20consultar%20disponibilidad%20y%20cotizaci%C3%B3n%20para%20Pista%20de%20baile%20LED." target="_blank" rel="noopener">Cotizar este servicio <span aria-hidden="true">↗</span></a></div>
+        <div class="service-content">
+          <div class="service-heading"><span class="service-num">02</span><h3>Pista de baile LED</h3></div>
+          <h4>Efecto abismo infinito 3D.</h4>
+          <p>16 módulos antideslizantes y reforzados que hipnotizan con patrones dinámicos multicolores. El centro de todas las miradas y fotografías.</p>
+          <a class="service-link" href="https://wa.me/573173614647?text=Hola%20DJ%20Moro%2C%20quiero%20consultar%20disponibilidad%20y%20cotizaci%C3%B3n%20para%20Pista%20de%20baile%20LED." target="_blank" rel="noopener">Cotizar este servicio <span aria-hidden="true">↗</span></a>
+        </div>
       </article>
+
       <article class="service reveal violet">
-        <button class="service-image" type="button" data-poster="assets/plataforma.png" data-title="Plataforma 360°" aria-label="Ampliar imagen de Plataforma 360°">
+        <button class="service-image" type="button" data-poster="assets/plataforma.png" data-title="Plataforma 360°" aria-label="Ampliar póster de Plataforma 360°">
           <img src="assets/plataforma.png" alt="Plataforma 360° de DJ Moro Producciones" loading="lazy" width="1024" height="1536">
-          <span class="image-tag">TU MOMENTO EN 360°</span><span class="expand" aria-hidden="true">↗</span>
+          <span class="image-tag">VIDEOS 360° AL INSTANTE</span>
+          <span class="expand" aria-hidden="true">↗</span>
         </button>
-        <div class="service-content"><div class="service-heading"><span class="service-num">03</span><h3>Plataforma 360°</h3></div>
-        <h4>El protagonista eres tú.</h4><p>Captura cada ángulo, diviértete con tus invitados y llévate un recuerdo en movimiento.</p>
-        <a class="service-link" href="https://wa.me/573173614647?text=Hola%20DJ%20Moro%2C%20quiero%20consultar%20disponibilidad%20y%20cotizaci%C3%B3n%20para%20Plataforma%20360%C2%B0." target="_blank" rel="noopener">Cotizar este servicio <span aria-hidden="true">↗</span></a></div>
+        <div class="service-content">
+          <div class="service-heading"><span class="service-num">03</span><h3>Plataforma 360°</h3></div>
+          <h4>Tus invitados como estrellas.</h4>
+          <p>Videos espectaculares con aro LED y cámara giratoria listos para compartir al instante en Instagram, TikTok y WhatsApp.</p>
+          <a class="service-link" href="https://wa.me/573173614647?text=Hola%20DJ%20Moro%2C%20quiero%20consultar%20disponibilidad%20y%20cotizaci%C3%B3n%20para%20Plataforma%20360%C2%B0." target="_blank" rel="noopener">Cotizar este servicio <span aria-hidden="true">↗</span></a>
+        </div>
       </article>
+
       <article class="service reveal orange">
-        <button class="service-image" type="button" data-poster="assets/confeti.png" data-title="Cañón de confeti" aria-label="Ampliar imagen de Cañón de confeti">
+        <button class="service-image" type="button" data-poster="assets/confeti.png" data-title="Cañón de confeti CO2" aria-label="Ampliar póster de Cañón de confeti">
           <img src="assets/confeti.png" alt="Cañón de confeti de DJ Moro Producciones" loading="lazy" width="1024" height="1536">
-          <span class="image-tag">QUE LLUEVA LA EMOCIÓN</span><span class="expand" aria-hidden="true">↗</span>
+          <span class="image-tag">DISPARO POTENTE CO₂</span>
+          <span class="expand" aria-hidden="true">↗</span>
         </button>
-        <div class="service-content"><div class="service-heading"><span class="service-num">04</span><h3>Cañón de confeti</h3></div>
-        <h4>El instante de soltarlo todo.</h4><p>Una explosión de color para esa entrada, esa canción o ese momento que merece algo más.</p>
-        <a class="service-link" href="https://wa.me/573173614647?text=Hola%20DJ%20Moro%2C%20quiero%20consultar%20disponibilidad%20y%20cotizaci%C3%B3n%20para%20Ca%C3%B1%C3%B3n%20de%20confeti." target="_blank" rel="noopener">Cotizar este servicio <span aria-hidden="true">↗</span></a></div>
+        <div class="service-content">
+          <div class="service-heading"><span class="service-num">04</span><h3>Cañón de confeti</h3></div>
+          <h4>Explosión máxima de euforia.</h4>
+          <p>Disparo profesional de gran alcance y cobertura para coronar el brindis, la revelación, el clímax de la hora loca o el conteo regresivo.</p>
+          <a class="service-link" href="https://wa.me/573173614647?text=Hola%20DJ%20Moro%2C%20quiero%20consultar%20disponibilidad%20y%20cotizaci%C3%B3n%20para%20Ca%C3%B1%C3%B3n%20de%20confeti." target="_blank" rel="noopener">Cotizar este servicio <span aria-hidden="true">↗</span></a>
+        </div>
       </article>
+
       <article class="service reveal gold">
-        <button class="service-image" type="button" data-poster="assets/chispas.png" data-title="Pólvora fría" aria-label="Ampliar imagen de Pólvora fría">
+        <button class="service-image" type="button" data-poster="assets/chispas.png" data-title="2 Quemadores de Pólvora Fría" aria-label="Ampliar póster de Pólvora fría">
           <img src="assets/chispas.png" alt="Pólvora fría de DJ Moro Producciones" loading="lazy" width="1024" height="1536">
-          <span class="image-tag">UN FINAL QUE BRILLA</span><span class="expand" aria-hidden="true">↗</span>
+          <span class="image-tag">2 QUEMADORES · SIN RIESGOS</span>
+          <span class="expand" aria-hidden="true">↗</span>
         </button>
-        <div class="service-content"><div class="service-heading"><span class="service-num">05</span><h3>Pólvora fría</h3></div>
-        <h4>Haz brillar el gran momento.</h4><p>Máquinas y quemadores de chispas para enmarcar entradas, bailes y cierres memorables.</p>
-        <a class="service-link" href="https://wa.me/573173614647?text=Hola%20DJ%20Moro%2C%20quiero%20consultar%20disponibilidad%20y%20cotizaci%C3%B3n%20para%20P%C3%B3lvora%20fr%C3%ADa." target="_blank" rel="noopener">Cotizar este servicio <span aria-hidden="true">↗</span></a></div>
+        <div class="service-content">
+          <div class="service-heading"><span class="service-num">05</span><h3>Pólvora fría</h3></div>
+          <h4>Brillo de escenario 100% seguro.</h4>
+          <p>Dos máquinas electrónicas de chispas frías ideales para interiores y exteriores. Enmarca entradas, primer baile, vals y fotos épicas.</p>
+          <a class="service-link" href="https://wa.me/573173614647?text=Hola%20DJ%20Moro%2C%20quiero%20consultar%20disponibilidad%20y%20cotizaci%C3%B3n%20para%20P%C3%B3lvora%20fr%C3%ADa." target="_blank" rel="noopener">Cotizar este servicio <span aria-hidden="true">↗</span></a>
+        </div>
       </article>
-      <aside class="mix-card reveal"><span class="mix-symbol" aria-hidden="true">✳</span><p class="eyebrow">TU COMBINACIÓN PERFECTA</p><h3>HAZLO<br>A TU<br><em>MANERA.</em></h3><p>Tu idea, tu estilo, tu gran momento. Combina los servicios que más te gustan.</p><a class="button primary" href="https://wa.me/573173614647?text=Hola%20DJ%20Moro%2C%20quiero%20combinar%20servicios%20para%20mi%20evento." target="_blank" rel="noopener">Arma tu show <span aria-hidden="true">↗</span></a></aside>
+
+      <aside class="mix-card reveal">
+        <span class="mix-symbol" aria-hidden="true">✳</span>
+        <p class="eyebrow">PAQUETES A MEDIDA</p>
+        <h3>HAZLO<br>A TU<br><em>MANERA.</em></h3>
+        <p>Combina varios equipos en un solo montaje y obtén una experiencia integral coordinada de principio a fin por nuestro equipo.</p>
+        <a class="button primary" href="#arma-tu-show">Diseñar mi paquete <span aria-hidden="true">↓</span></a>
+      </aside>
     </div>
-    <p class="service-note">Atendemos Tuluá y alrededores, incluyendo Buga, Guacarí y Calima–El Darién (zona del lago Calima), en el Valle del Cauca. Consulta disponibilidad y costos de desplazamiento.</p>
-    <p class="service-note">La instalación y el uso de efectos especiales se coordinan según las condiciones del lugar y del evento.</p>
+
+    <div class="coverage-banner reveal">
+      <div>
+        <strong>📍 Cobertura regional en el Valle del Cauca</strong>
+        <p>Atendemos en <span>Tuluá</span>, <span>Buga</span>, <span>Guacarí</span>, <span>Andalucía</span>, <span>San Pedro</span> y <span>Calima–El Darién (Lago Calima)</span>. Instalación y efectos coordinados según las condiciones de tu salón o finca.</p>
+      </div>
+      <a class="coverage-cta" href="https://wa.me/573173614647?text=Hola%20DJ%20Moro%2C%20quiero%20consultar%20disponibilidad%20en%20mi%20municipio." target="_blank" rel="noopener">Consultar cobertura ↗</a>
+    </div>
   </section>
+
+  <!-- INTERACTIVE COMBO BUILDER -->
+  <section class="builder-section section" id="arma-tu-show" aria-labelledby="builder-title">
+    <div class="builder-shell reveal">
+      <div class="builder-header">
+        <div>
+          <p class="eyebrow">03 / COTIZADOR INTERACTIVO EN 30 SEGUNDOS</p>
+          <h2 id="builder-title">Arma tu <em>show ideal</em></h2>
+        </div>
+        <div class="energy-meter" aria-live="polite">
+          <span class="energy-label">NIVEL DE IMPACTO</span>
+          <strong class="energy-status" id="energy-status">🔥 SHOW COMPLETO</strong>
+          <div class="energy-track" aria-hidden="true"><div class="energy-fill" id="energy-fill"></div></div>
+        </div>
+      </div>
+
+      <div class="builder-grid">
+        <div class="builder-controls">
+          <div class="builder-step">
+            <span class="step-badge">1. ¿Qué celebras?</span>
+            <div class="builder-pills" role="radiogroup" aria-label="Tipo de celebración">
+              <button type="button" class="choice-pill is-selected" data-event-choice="Matrimonio">💍 Matrimonio</button>
+              <button type="button" class="choice-pill" data-event-choice="Fiesta de 15 años">👑 15 Años</button>
+              <button type="button" class="choice-pill" data-event-choice="Baby Shower / Revelación">🧸 Baby Shower</button>
+              <button type="button" class="choice-pill" data-event-choice="Cumpleaños / Fiesta privada">🎉 Cumpleaños</button>
+              <button type="button" class="choice-pill" data-event-choice="Evento empresarial">💼 Empresarial</button>
+            </div>
+          </div>
+
+          <div class="builder-step">
+            <span class="step-badge">2. Elige tus equipos y efectos (toca para sumar o quitar)</span>
+            <div class="addon-grid">
+              <button type="button" class="addon-card is-selected" data-addon="Sonido + Luces + DJ" data-fx-preview="lasers">
+                <span class="addon-check" aria-hidden="true">✓</span>
+                <strong>🎧 Sonido + Luces + DJ</strong>
+                <small>Cabina, bajos, luces y mezcla en vivo</small>
+              </button>
+              <button type="button" class="addon-card is-selected" data-addon="Pista de baile LED 4x4" data-fx-preview="lasers">
+                <span class="addon-check" aria-hidden="true">✓</span>
+                <strong>🪩 Pista LED Infinity 4×4</strong>
+                <small>16 módulos con efecto infinito</small>
+              </button>
+              <button type="button" class="addon-card is-selected" data-addon="Plataforma 360°" data-fx-preview="sparks">
+                <span class="addon-check" aria-hidden="true">✓</span>
+                <strong>🎥 Plataforma 360°</strong>
+                <small>Videos slow-motion instantáneos</small>
+              </button>
+              <button type="button" class="addon-card" data-addon="Pólvora fría (2 quemadores)" data-fx-preview="sparks">
+                <span class="addon-check" aria-hidden="true">✓</span>
+                <strong>✨ Pólvora Fría (×2)</strong>
+                <small>Chispas seguras interior/exterior</small>
+              </button>
+              <button type="button" class="addon-card" data-addon="Cañón de confeti CO2" data-fx-preview="confetti">
+                <span class="addon-check" aria-hidden="true">✓</span>
+                <strong>🎊 Cañón Confeti CO₂</strong>
+                <small>Disparo potente para el gran momento</small>
+              </button>
+              <button type="button" class="addon-card" data-addon="Proyector de video" data-fx-preview="lasers">
+                <span class="addon-check" aria-hidden="true">✓</span>
+                <strong>📽️ Proyector de Video</strong>
+                <small>Pantalla nítida para fotos y clips</small>
+              </button>
+            </div>
+          </div>
+
+          <div class="builder-step builder-inputs">
+            <label>
+              <span>3. Ciudad o lugar (opcional)</span>
+              <input type="text" id="builder-place" placeholder="Ej: Tuluá, Buga, Lago Calima..." autocomplete="address-level2">
+            </label>
+            <label>
+              <span>4. Fecha aproximada (opcional)</span>
+              <input type="text" id="builder-date" placeholder="Ej: Sábado 15 de noviembre">
+            </label>
+          </div>
+        </div>
+
+        <aside class="builder-summary" aria-label="Resumen de tu combo">
+          <div class="led-mini-preview" id="led-preview" aria-hidden="true">
+            <i></i><i></i><i></i><i></i>
+            <i></i><i></i><i></i><i></i>
+            <i></i><i></i><i></i><i></i>
+            <i></i><i></i><i></i><i></i>
+          </div>
+          <p class="summary-kicker">TU SELECCIÓN PERSONALIZADA</p>
+          <h3 id="summary-event">Matrimonio</h3>
+          <ul class="summary-list" id="summary-list"></ul>
+          <a class="button primary summary-whatsapp" id="summary-whatsapp" href="https://wa.me/573173614647" target="_blank" rel="noopener">
+            Cotizar este combo en WhatsApp <span aria-hidden="true">↗</span>
+          </a>
+          <small class="summary-hint">Respuesta directa con DJ Moro · Sin compromiso</small>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE SECTION -->
   <section class="experience section" id="experiencia">
     <div class="experience-orbit" aria-hidden="true"></div>
-    <div class="experience-top reveal"><p class="eyebrow">02 / MOMENTOS QUE SE QUEDAN</p><h2>La piel de gallina.<br>Las manos arriba.<br><em>Eso que no se explica.</em></h2><p>La emoción de una entrada. Tu canción con todos en la pista.<br>Ese instante merece su propio espectáculo.</p></div>
-    <div class="steps"><article class="reveal"><span>01 / IMAGINA</span><h3>Cuéntanos tu plan.</h3><p>La fecha, el lugar y esa celebración que tienes en mente.</p></article><article class="reveal"><span>02 / COMBINA</span><h3>Encuentra tu ritmo.</h3><p>Elige el sonido, las luces y los efectos para hacerla tuya.</p></article><article class="reveal"><span>03 / COORDINA</span><h3>Prepara el momento.</h3><p>Confirma disponibilidad, cotización y detalles del montaje.</p></article></div>
+    <div class="experience-top reveal">
+      <p class="eyebrow">04 / MOMENTOS QUE SE QUEDAN</p>
+      <h2>La piel de gallina.<br>Las manos arriba.<br><em>Eso que no se explica.</em></h2>
+      <p>La emoción de una gran entrada. Tu canción favorita con todas las generaciones bailando juntas.<br>Nos encargamos de cada detalle técnico para que tú solo te dediques a disfrutar.</p>
+    </div>
+    <div class="steps">
+      <article class="reveal">
+        <span>01 / CUÉNTANOS</span>
+        <h3>Reserva tu fecha.</h3>
+        <p>Escríbenos qué celebras, la fecha y el salón o finca para verificar disponibilidad inmediata.</p>
+      </article>
+      <article class="reveal">
+        <span>02 / PERSONALIZA</span>
+        <h3>Define tu estilo musical.</h3>
+        <p>Planeamos contigo las canciones clave, entradas, protocolos y el momento exacto de cada efecto.</p>
+      </article>
+      <article class="reveal">
+        <span>03 / BRILLA</span>
+        <h3>Vive el espectáculo.</h3>
+        <p>Llegamos con anticipación, montamos todo impecable y encendemos una noche inolvidable.</p>
+      </article>
+    </div>
   </section>
+
+  <!-- FINAL CALL TO ACTION -->
   <section class="contact section" id="contacto">
-    <div class="contact-halo" aria-hidden="true"></div><div class="reveal"><p class="eyebrow">03 / EL SIGUIENTE GRAN MOMENTO ES EL TUYO</p><h2>¿LE DAMOS<br><em>PLAY?</em><span class="contact-arrow" aria-hidden="true">↗</span></h2><div class="contact-bottom"><p>Cuéntanos qué vas a celebrar.<br>La energía la ponemos nosotros.</p><a class="button primary" href="https://wa.me/573173614647?text=Hola%20DJ%20Moro%2C%20quiero%20cotizar%20mi%20evento.%20La%20fecha%20es%3A%20%20y%20el%20lugar%3A%20" target="_blank" rel="noopener">Cotiza por WhatsApp <span aria-hidden="true">↗</span></a></div></div>
+    <div class="contact-halo" aria-hidden="true"></div>
+    <div class="reveal">
+      <p class="eyebrow">05 / LAS FECHAS DE FIN DE SEMANA VUELAN</p>
+      <h2>¿LE DAMOS<br><em>PLAY?</em><span class="contact-arrow" aria-hidden="true">↗</span></h2>
+      <div class="contact-bottom">
+        <p>Cuéntanos qué tienes en mente.<br>Nosotros ponemos el sonido, la luz y toda la energía.</p>
+        <a class="button primary pulse-glow" href="https://wa.me/573173614647?text=Hola%20DJ%20Moro%2C%20quiero%20cotizar%20mi%20evento.%20La%20fecha%20es%3A%20%20y%20el%20lugar%3A%20" target="_blank" rel="noopener">
+          Hablar por WhatsApp <span aria-hidden="true">↗</span>
+        </a>
+      </div>
+    </div>
   </section>
 </main>
-<footer><a class="brand" href="#inicio"><span class="brand-name">DJ MORO<span class="brand-star" aria-hidden="true">✳</span></span><span class="brand-sub">P R O D U C C I O N E S</span></a><p>Sonido, energía y momentos que se quedan.</p><a href="tel:+573173614647">+57 317 361 4647</a></footer>
-<a class="floating-contact" href="https://wa.me/573173614647" target="_blank" rel="noopener" aria-label="Contactar a DJ Moro por WhatsApp"><svg width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M21 11.5a9 9 0 0 1-13.4 7.9L3 21l1.6-4.6A9 9 0 1 1 21 11.5Z"/><path d="M8 7c-2 3 3 8 6 8l2-2-3-1-1 1-2-2 1-1-1-3Z"/></svg><span>Hablemos</span></a>
-<dialog class="poster-dialog" aria-labelledby="poster-title"><div class="dialog-top"><h2 id="poster-title">Nuestros servicios</h2><button class="dialog-close" type="button" aria-label="Cerrar imagen">✕</button></div><img alt="" class="poster-full"><a class="dialog-quote" href="https://wa.me/573173614647" target="_blank" rel="noopener">Consultar por WhatsApp ↗</a></dialog>
+
+<footer>
+  <a class="brand" href="#inicio">
+    <span class="brand-name">DJ MORO<span class="brand-star" aria-hidden="true">✳</span></span>
+    <span class="brand-sub">P R O D U C C I O N E S</span>
+  </a>
+  <p>Tuluá · Buga · Guacarí · Calima–El Darién · Sonido, pista LED, 360° y efectos especiales.</p>
+  <a href="tel:+573173614647">+57 317 361 4647</a>
+</footer>
+
+<a class="floating-contact" href="https://wa.me/573173614647?text=Hola%20DJ%20Moro%2C%20quiero%20consultar%20disponibilidad%20para%20un%20evento." target="_blank" rel="noopener" aria-label="Contactar a DJ Moro por WhatsApp">
+  <span class="floating-ping" aria-hidden="true"></span>
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><path d="M21 11.5a9 9 0 0 1-13.4 7.9L3 21l1.6-4.6A9 9 0 1 1 21 11.5Z"/><path d="M8 7c-2 3 3 8 6 8l2-2-3-1-1 1-2-2 1-1-1-3Z"/></svg>
+  <span>Cotizar ahora</span>
+</a>
+
+<dialog class="poster-dialog" aria-labelledby="poster-title">
+  <div class="dialog-top">
+    <h2 id="poster-title">Nuestros servicios</h2>
+    <button class="dialog-close" type="button" aria-label="Cerrar imagen">✕</button>
+  </div>
+  <img alt="" class="poster-full">
+  <a class="dialog-quote" href="https://wa.me/573173614647" target="_blank" rel="noopener">Consultar disponibilidad por WhatsApp ↗</a>
+</dialog>
 </body>
 </html>
