@@ -13,6 +13,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="cosmic.css?v=3">
+  <link rel="stylesheet" href="eventos.css?v=1">
   <script src="cosmic.js?v=3" defer></script>
 </head>
 <body>
@@ -21,7 +22,7 @@
 <canvas id="atmosphere" aria-hidden="true"></canvas>
 <header class="site-header">
   <a class="brand" href="#inicio" aria-label="DJ Moro Producciones, inicio"><span class="brand-name">DJ MORO<span class="brand-star" aria-hidden="true">✳</span></span><span class="brand-sub">P R O D U C C I O N E S</span></a>
-  <nav aria-label="Navegación principal"><a href="#servicios">El show</a><a href="#experiencia">La experiencia</a><a class="nav-contact" href="#contacto">Tu evento <span aria-hidden="true">↗</span></a></nav>
+  <nav aria-label="Navegación principal"><a href="#eventos">Eventos</a><a href="#servicios">Servicios</a><a class="nav-contact" href="#contacto">Cotizar</a></nav>
   <button class="motion-toggle" type="button" aria-pressed="false" aria-label="Pausar animaciones"><span class="motion-icon" aria-hidden="true">Ⅱ</span><span class="motion-label">Pausar efectos</span></button>
 </header>
 <main id="contenido">
@@ -31,16 +32,44 @@
     <div class="laser laser-one" aria-hidden="true"></div><div class="laser laser-two" aria-hidden="true"></div><div class="laser laser-three" aria-hidden="true"></div>
     <div class="hero-copy">
       <p class="eyebrow"><span class="mini-wave" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span> SONIDO. LUCES. EMOCIÓN.</p>
-      <h1 id="hero-title">TU FIESTA,<br>DE OTRO<br><em>MUNDO.</em></h1>
-      <p class="hero-description">Hay fiestas que se recuerdan.<br>Y otras que <strong>se vuelven a sentir.</strong></p>
+      <h1 id="hero-title">CADA EVENTO<br>TIENE SU <em>ESTILO.</em></h1>
+      <p class="hero-description">DJ, sonido e iluminación en Tuluá para matrimonios, baby showers, fiestas y eventos empresariales.</p>
       <div class="hero-actions"><a class="button primary" href="https://wa.me/573173614647?text=Hola%20DJ%20Moro%2C%20quiero%20cotizar%20mi%20evento.%20La%20fecha%20es%3A%20%20y%20el%20lugar%3A%20" target="_blank" rel="noopener">Hagamos tu evento <span aria-hidden="true">↗</span></a><button class="show-trigger" type="button"><span class="play-icon" aria-hidden="true">▷</span><span>Encender el show</span></button></div>
       <p class="hero-service-line">DJ & sonido <span>✦</span> Pista LED <span>✦</span> 360° <span>✦</span> Efectos</p>
     </div>
     <div class="frequency" aria-hidden="true"><canvas id="spectrum"></canvas><div class="frequency-center"><span>DJ MORO</span><small>FEEL THE ENERGY</small></div></div>
-    <div class="hero-foot"><span>LA NOCHE TIENE OTRO NIVEL.</span><a href="#servicios">EXPLORA EL SHOW <span aria-hidden="true">↓</span></a></div>
+    <div class="hero-foot"><a href="#eventos">Encuentra tu tipo de evento</a></div>
     <span class="show-status sr-only" role="status"></span>
   </section>
-  <div class="marquee" aria-hidden="true"><div><span>SUBE EL VOLUMEN</span><b>✳</b><span class="outline">ENCIENDE LA NOCHE</span><b>✳</b><span>CREA EL MOMENTO</span><b>✳</b><span>SUBE EL VOLUMEN</span><b>✳</b><span class="outline">ENCIENDE LA NOCHE</span><b>✳</b><span>CREA EL MOMENTO</span><b>✳</b></div></div>
+  <section class="event-showcase" id="eventos" aria-labelledby="event-title">
+    <div class="event-wrap">
+      <header class="event-intro"><p>Eventos en Tuluá y alrededores</p><h2 id="event-title">¿Qué vas a celebrar?</h2></header>
+      <div class="event-grid">
+        <article class="event-card event-wedding">
+          <h3>Matrimonios</h3>
+          <p>Desde la música de la entrada hasta la última canción. Dale a cada momento su propio ambiente.</p>
+          <ul><li>Sonido para ceremonia y brindis</li><li>Iluminación ambiental</li><li>DJ y pista LED para la recepción</li></ul>
+          <a href="https://wa.me/573173614647?text=Hola%20DJ%20Moro%2C%20quiero%20cotizar%20mi%20matrimonio." target="_blank" rel="noopener">Cotizar matrimonio</a>
+        </article>
+        <article class="event-card event-baby">
+          <h3>Baby showers</h3>
+          <p>Un ambiente cálido para recibir a la familia y celebrar la llegada del bebé.</p>
+          <ul><li>Música ambiental para compartir</li><li>Sonido para juegos y anuncios</li><li>Plataforma 360° opcional</li></ul>
+          <a href="https://wa.me/573173614647?text=Hola%20DJ%20Moro%2C%20quiero%20cotizar%20un%20baby%20shower." target="_blank" rel="noopener">Cotizar baby shower</a>
+        </article>
+        <article class="event-card event-party">
+          <h3>Cumpleaños y 15 años</h3>
+          <p>Música para llenar la pista y luces para destacar la entrada, el baile o el momento de la torta.</p>
+          <a href="https://wa.me/573173614647?text=Hola%20DJ%20Moro%2C%20quiero%20cotizar%20una%20fiesta%20privada." target="_blank" rel="noopener">Cotizar celebración</a>
+        </article>
+        <article class="event-card event-business">
+          <h3>Eventos empresariales</h3>
+          <p>Sonido para intervenciones, iluminación y música para reuniones, lanzamientos y celebraciones de empresa.</p>
+          <a href="https://wa.me/573173614647?text=Hola%20DJ%20Moro%2C%20quiero%20cotizar%20un%20evento%20empresarial." target="_blank" rel="noopener">Cotizar evento empresarial</a>
+        </article>
+      </div>
+    </div>
+  </section>
   <section class="services section" id="servicios">
     <div class="section-heading reveal"><div><p class="eyebrow">01 / DISEÑA TU NOCHE</p><h2>No es solo una fiesta.<br><em>Es todo un show.</em></h2></div><p>DJ Moro Producciones en Tuluá.<br>Alquiler de sonido, DJ, iluminación y efectos especiales para tu evento.</p></div>
     <div class="service-grid">
@@ -97,7 +126,6 @@
   <section class="experience section" id="experiencia">
     <div class="experience-orbit" aria-hidden="true"></div>
     <div class="experience-top reveal"><p class="eyebrow">02 / MOMENTOS QUE SE QUEDAN</p><h2>La piel de gallina.<br>Las manos arriba.<br><em>Eso que no se explica.</em></h2><p>La emoción de una entrada. Tu canción con todos en la pista.<br>Ese instante merece su propio espectáculo.</p></div>
-    <div class="event-types reveal"><span>Bodas</span><span>15 años</span><span>Cumpleaños</span><span>Empresariales</span><span>Fiestas privadas</span></div>
     <div class="steps"><article class="reveal"><span>01 / IMAGINA</span><h3>Cuéntanos tu plan.</h3><p>La fecha, el lugar y esa celebración que tienes en mente.</p></article><article class="reveal"><span>02 / COMBINA</span><h3>Encuentra tu ritmo.</h3><p>Elige el sonido, las luces y los efectos para hacerla tuya.</p></article><article class="reveal"><span>03 / COORDINA</span><h3>Prepara el momento.</h3><p>Confirma disponibilidad, cotización y detalles del montaje.</p></article></div>
   </section>
   <section class="contact section" id="contacto">
